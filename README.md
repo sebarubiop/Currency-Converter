@@ -1,7 +1,7 @@
 # Currency Converter
 
 ## Description
-This web application consume an API from [Fixer.io] (http://fixer.io) to retrieve conversion data and display the result to the user in a modern interface (Usin Blur Admin Angular template).
+This web application consume an API from [Fixer.io](http://fixer.io) to retrieve conversion data and display the result to the user in a modern interface (Usin Blur Admin Angular template).
 
 ## Install tools
 If you don’t havee any of these tools installed already, you will need to:
