@@ -1,48 +1,37 @@
-[![Build Status](https://travis-ci.org/akveo/blur-admin.svg?branch=master)](https://travis-ci.org/akveo/blur-admin)
+# Currency Converter
 
-# BlurAdmin Angular admin panel front-end framework
+## Description
+This web application consume an API from [Fixer.io] (http://fixer.io) to retrieve conversion data and display the result to the user in a modern interface (Usin Blur Admin Angular template).
 
-Customizable admin panel framework made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
+## Install tools
+If you don’t havee any of these tools installed already, you will need to:
 
-### Demo
-**[Mint version demo](http://akveo.com/blur-admin-mint/)**             |  **[Blur version demo](http://akveo.com/blur-admin/)**
-:-------------------------:|:-------------------------:
-![Mint version demo](http://i.imgur.com/A3TMviJ.png)  |  ![Blur version demo](http://i.imgur.com/EAoiK2O.jpg)
+- Download and install **git**
+- Download and install **nodejs** https://nodejs.org
+* *Note:* It seems like there are some problems with some libraries used in this template and old node versions. That’s why we suggest you to have one of the latest.
 
-## Angular 2 version
-Here you can find Angular2 based version: [ng2-admin](https://github.com/akveo/ng2-admin).
+## Clone repository and install dependencies
+You will need to clone source code of BlurAdmin GitHub repository. To do this open console and execute following lines:
 
-### Documentation
-Installation, customization and other useful articles: https://akveo.github.io/blur-admin/
+`git clone https://github.com/sebarubiop/Currency-Converter.git`
 
-*If you have problems installing and just want to download JS and css files, you can find download links here*: http://akveo.github.io/blur-admin/articles/091-downloads/
+After repository is cloned, go inside of repository directory and install dependencies there:
 
-## How can I support developers?
-- Star our GitHub repo
-- Create pull requests, submit bugs, suggest new features or documentation updates
-- Follow us on [Twitter](https://twitter.com/akveo_inc)
-- Like our page on [Facebook](https://www.facebook.com/akveo/)
+`cd Current-Converter`
+`npm install`
 
-## Can I hire you guys?
-Yes! We are available for hire. Visit [our homepage](http://akveo.com/) or simply leave us a note to contact@akveo.com. We will be happy to work with you!
+This will setup a working copy of BlurAdmin on your local machine
 
-## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Sass
-* Gulp build
-* AngularJS
-* Jquery
-* Charts (amChart, Chartist, Chart.js, Morris)
-* Maps (Google, Leaflet, amMap)
-* etc
+## Running local copy
+To run local copy in development mode, execute:
 
-License
--------------
-<a href=/LICENSE.txt target="_blank">MIT</a> license.
+`gulp serve`
 
-### From akveo
+This script should automatically open template in your default browser.
 
-Enjoy!
-We're always happy to hear your feedback.
+To run local copy in production mode, execute:
+
+`gulp serve:dist`
+
+### Base on: **BlurAdmin Angular** admin panel front-end framework
+
