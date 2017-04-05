@@ -15,7 +15,7 @@
     $scope.currency2 = 'USD';
 
 
-    var calculate = function(am1,cu1,cu2){
+    $scope.calculate = function(am1,cu1,cu2){
          $http({
         url: api_url+'latest', 
         method: "GET",
@@ -28,22 +28,7 @@
         });
     }
 
-   calculate($scope.amount1,$scope.currency1,$scope.currency2);
-
-    $scope.convertAmount1 = function(am1,cu1,cu2){
-        
-        calculate(am1,cu1,cu2);
-    }
-
-    $scope.convertCurrency1 = function(am1,cu1,cu2){
-        calculate(am1,cu1,cu2);
-        
-    }
-
-    $scope.convertCurrency2 = function(am1,cu1,cu2){
-        calculate(am1,cu1,cu2);
-        
-    }
+   $scope.calculate($scope.amount1,$scope.currency1,$scope.currency2);
 
 
     //Historical rates///////////////////////////////////////////////////////////////////////////////////////////

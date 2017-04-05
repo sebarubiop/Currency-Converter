@@ -16,11 +16,11 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="number" ng-model="amount1" min="0" class="form-control input-lg" ng-change="convertAmount1(amount1,currency1,currency2)" placeholder="Enter amount">
+                                    <input type="number" ng-model="amount1" min="0" class="form-control input-lg" ng-change="calculate(amount1,currency1,currency2)" placeholder="Enter amount">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <select class="form-control input-lg" ng-model="currency1" ng-change="convertCurrency1(amount1,currency1,currency2)">
+                                <select class="form-control input-lg" ng-model="currency1" ng-change="calculate(amount1,currency1,currency2)">
                                     <option>AUD</option>
                                     <option>CAD</option>
                                     <option>USD</option>
@@ -35,7 +35,7 @@
                                 <h2>{{amount2 | number:2}}</h2>
                             </div>
                             <div class="col-md-6">
-                                <select class="form-control input-lg" ng-model="currency2" ng-change="convertCurrency2(amount1,currency1,currency2)">
+                                <select class="form-control input-lg" ng-model="currency2" ng-change="calculate(amount1,currency1,currency2)">
                                     <option>AUD</option>
                                     <option>CAD</option>
                                     <option>USD</option>
