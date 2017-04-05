@@ -1,0 +1,55 @@
+<style>
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    color: #f50f0f;
+}
+    </style>
+<div class="row ">
+    <div class="col-md-4">
+        <div ba-panel ba-panel-title="Converter">
+            <form>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="number" ng-model="amount1" min="0" class="form-control input-lg" ng-change="convertAmount1(amount1,currency1,currency2)" placeholder="Enter amount">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control input-lg" ng-model="currency1">
+                            <option>AUD</option>
+                            <option>CAD</option>
+                            <option>USD</option>
+                            <option>GBP</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="number" ng-model="amount2 | number:2" class="form-control input-lg" disabled>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control input-lg" ng-model="currency2">
+                            <option>AUD</option>
+                            <option>CAD</option>
+                            <option>USD</option>
+                            <option>GBP</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-md-12">
+        
+        <div ba-panel ba-panel-title="Graph" class="chartist">
+            <h3>Base: EUR <small>(2000-01-03)</small></h3> Limit to 10 records
+            <div id="area-chart" class="ct-chart"></div>
+        </div>
+    </div>
+</div>
